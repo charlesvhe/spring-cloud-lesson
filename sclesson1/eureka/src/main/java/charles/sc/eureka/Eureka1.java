@@ -1,17 +1,16 @@
-package charles.sc.sidecar;
+package charles.sc.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.sidecar.EnableSidecar;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * Created by issuser on 2017/1/13.
  */
 @SpringBootApplication
-@EnableSidecar
-public class Application {
-
+@EnableEurekaServer
+public class Eureka1 {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Eureka1.class, args);
     }
 }

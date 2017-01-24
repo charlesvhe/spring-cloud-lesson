@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-public class Application {
+public class Provider1 {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {  // 允许跨域
@@ -28,6 +28,6 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Provider1.class, args);
     }
 }

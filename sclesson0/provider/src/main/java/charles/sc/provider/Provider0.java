@@ -1,4 +1,4 @@
-package charles.sc.consumer;
+package charles.sc.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  * Created by issuser on 2017/1/13.
  */
 @SpringBootApplication
-public class Application {
+public class Provider0 {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {  // 允许跨域
@@ -26,6 +26,6 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Provider0.class, args);
     }
 }

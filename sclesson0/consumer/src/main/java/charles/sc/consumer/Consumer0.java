@@ -1,4 +1,4 @@
-package charles.sc.phpmock;
+package charles.sc.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 /**
- * Created by issuser on 2017/1/17.
+ * Created by issuser on 2017/1/13.
  */
 @SpringBootApplication
-public class Application {
+public class Consumer0 {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {  // 允许跨域
@@ -26,6 +26,6 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Consumer0.class, args);
     }
 }

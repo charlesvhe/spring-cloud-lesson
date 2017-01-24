@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableZuulProxy
-public class Application {
+public class Zuul1 {
     // 正则表达式更精确，但是速度稍慢，百万次 500ms左右
     public static final Pattern publicPattern = Pattern.compile("^/[\\w-]+/[\\w]+/pb");
     public static final Pattern protectedPattern = Pattern.compile("^/[\\w-]+/[\\w]+/pt");
@@ -31,6 +31,6 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Zuul1.class, args);
     }
 }

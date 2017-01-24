@@ -9,6 +9,8 @@ SOA-》SOAP-》Restful
 我们第一个“服务化”工程完成，思考一下，这样的“服务化”工程存在哪些问题？
 
 ###资料：
+https://github.com/charlesvhe/spring-cloud-lesson
+
 按照该教程逐步做完，对基于spring-cloud的微服务有个大致的了解 http://blog.didispace.com/springcloud1/
 
 spring cloud是基于spring boot的，如果spring boot不熟悉可以先了解（如果只是依葫芦画瓢可以先跳过，高级研发必须通读Reference文档） http://projects.spring.io/spring-boot/

@@ -1,4 +1,4 @@
-package charles.sc.sidecarconsumer;
+package charles.sc.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,8 +16,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients(basePackages = {"charles.sc.provider","charles.sc.php"})
-public class Application {
+@EnableFeignClients(basePackages = "charles.sc.provider")
+public class Consumer1 {
 
     @Bean
     public WebMvcConfigurer corsConfigurer() {  // 允许跨域
@@ -38,6 +38,6 @@ public class Application {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(Consumer1.class, args);
     }
 }
