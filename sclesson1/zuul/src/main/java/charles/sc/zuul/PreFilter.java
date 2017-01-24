@@ -40,10 +40,10 @@ public class PreFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
         String uri = request.getRequestURI();
 
-        if (Application.publicPattern.matcher(uri).find()) {
+        if (Zuul1.publicPattern.matcher(uri).find()) {
             // 直接放行
             return null;
-        } else if (Application.protectedPattern.matcher(uri).find() || Application.privatePattern.matcher(uri).find()) {
+        } else if (Zuul1.protectedPattern.matcher(uri).find() || Zuul1.privatePattern.matcher(uri).find()) {
             // 验证token
             String authorization = request.getHeader("authorization");
             if (!StringUtils.isEmpty(authorization)) {

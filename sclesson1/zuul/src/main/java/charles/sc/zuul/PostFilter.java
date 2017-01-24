@@ -66,7 +66,7 @@ public class PostFilter extends ZuulFilter {
         HttpServletRequest request = ctx.getRequest();
         String uri = request.getRequestURI();
 
-        if (Application.privatePattern.matcher(uri).find()) {
+        if (Zuul1.privatePattern.matcher(uri).find()) {
             ctx.setSendZuulResponse(true);
             InputStream rds = ctx.getResponseDataStream();
             try {
